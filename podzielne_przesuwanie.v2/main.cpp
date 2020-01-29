@@ -44,5 +44,13 @@ int main() {
     }
   }
 
-  printf("\n\nZostało %d elementów\n", ile);
+  printf("\n\n%d elementów niezerowych\n", ile);
+  if (n - ilosc_usun == ile) {
+    puts("Ilość elementów niezerowych zgodna z długością tablicy pomniejszoną o ilość usuniętych elementów");
+  } else {
+    puts("Błąd: Ilość elementów niezerowych różna od długości tablicy pomniejszonej o ilość usuniętych elementów!");
+    return(-1);
+  }
+
+  return 0;
 }
